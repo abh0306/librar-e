@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="15dp"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="3dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="5dp"
+        android:background="@color/bar"
+        android:paddingHorizontal="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/verticalSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/blue_logo_fontcolor"
+            android:layout_below="@+id/book_item_price_order"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/book_item_price_order"
+            android:text="Date"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/blue_logo_fontcolor"
+            android:textSize="23sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/book_item_price_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="@color/blue_logo_fontcolor"
+            />
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/verticalSeparator"
+            android:text="Buyer name"
+            android:layout_alignStart="@id/book_item_price_order"
+            android:textColor="@color/blue_logo_fontcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/order_name"
+            android:layout_below="@id/order_name"
+            android:text="Buyer phone number"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue_logo_fontcolor"
+            />
+        <TextView
+            android:id="@+id/order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/order_name"
+            android:layout_below="@id/order_phone"
+            android:text="Buyer address"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue_logo_fontcolor"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

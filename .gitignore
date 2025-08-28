@@ -1,0 +1,17 @@
+# Android/IntelliJ
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build/
+/app/build/
+*.keystore
+google-services.json
+.vscode/
+# Log files
+*.log
+# MacOS
+__MACOSX/
+# Windows
+Thumbs.db

@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="15dp"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="3dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="5dp"
+        android:background="@color/bar"
+        android:paddingHorizontal="4dp"
+        >
+        <TextView
+            android:id="@+id/orderBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_toLeftOf="@+id/orderBookQuantity"
+            android:textColor="@color/blue_logo_fontcolor"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/orderBookQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Quantity"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/blue_logo_fontcolor"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/orderBookPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/orderBookQuantity"
+            android:layout_marginTop="2dp"
+            android:text="Price"
+            android:textColor="@color/blue_logo_fontcolor"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

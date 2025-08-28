@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_logo_fontcolor">#4E5D72</color>
+    <color name="bar">#9cd2ee</color>
+    <color name="blue_lowerbar">#1f6982</color>
+    <color name="primary">#388b9b</color>
+    <color name="buttonlogin">#00b0d7</color>
+    <color name="background_color">#7fbee1</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input">#ee9dd2ee</color>
+    <color name="font">#4e768b</color>
+</resources>

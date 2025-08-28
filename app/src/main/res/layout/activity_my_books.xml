@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyBooks"
+    android:background="@color/background_color">
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bar"
+        android:padding="5dp"
+        android:elevation="15dp">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/librare"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/myBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:background="@color/bar"
+        android:text="I miei libri"
+        android:textSize="24dp"
+        android:textColor="@color/blue_logo_fontcolor"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:id="@+id/verticalSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/blue_logo_fontcolor"
+        android:layout_below="@+id/myBooks"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/verticalSeparator"
+        android:id="@+id/sellerMyBooksShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

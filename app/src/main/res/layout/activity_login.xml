@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/librare_logo"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp"
+        android:src="@drawable/librareicon"
+    />
+
+    <TextView
+        android:id="@+id/accesstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/librare_logo"
+        android:layout_marginTop="15dp"
+        android:text="Accedi"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="65dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/emailinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/accesstext"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/inputtext"
+        android:textSize="25sp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/passwordinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/emailinput"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/inputtext"
+        android:textSize="25sp"
+        android:hint="Password"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/access_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordinput"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Log In"
+        />
+
+    <CheckBox
+        android:id="@+id/checkremember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/access_button"
+        android:layout_centerHorizontal="true"
+        android:text="Ricordami"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue_logo_fontcolor"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/checkremember"
+        android:layout_centerHorizontal="true"
+        android:text="Hai dimenticato la password?"
+        android:textColor="@color/blue_logo_fontcolor"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:textColor="@color/blue_logo_fontcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Non hai un account? Registrati"
+        android:textSize="20sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="Missing Constraints"
+        />
+</RelativeLayout>
